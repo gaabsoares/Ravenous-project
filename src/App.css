@@ -1,0 +1,48 @@
+/* Universal Styles */
+
+html {
+  font-size: 1.2rem;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: .9rem;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+/* App Styles */
+
+.App {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.header {
+  padding: .66rem 0;
+  text-align: center;
+  background-color: #cca353;
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+}
+
+footer {
+  height: 2rem;
+  background-color: #cca353;
+  margin-top: -1rem;
+  width: 100%;
+  display: block;
+  content: '';
+}
+
+

@@ -1,0 +1,97 @@
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/background_search_desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+}
+
+.search-options {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.search-options li {
+    cursor: pointer;
+    width: 5rem;
+    line-height: 1.2rem;
+    list-style: none;
+    padding: 0 2.5rem .5rem 2.5rem;
+    border-bottom: 1px solid white;
+    font-weight: 600;
+    transition: color .2s;
+}
+
+.search-options li:hover {
+  color: #d4cfcf;
+}
+
+.search-options li.active,
+.search-options li.active:hover {
+  border-bottom: 1px solid #f0c36c;
+  color: #f0c36c;
+}
+
+.user-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    height: 1rem;
+    width: 20rem;
+    margin-right: 2.5rem;
+}
+
+.input:last-child {
+    margin-right: 0;
+}
+
+.submit {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.submit a {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  border: 1px solid gray;
+  background-color: #cca353;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 0.5s;
+}
+
+.submit a:hover {
+  cursor: pointer;
+  background-color: #a7874b;
+}
+
+@media only screen and (max-width: 560px) {
+  .search-bar {
+    background-image: url("../images/background_search_mobile.jpg");
+  }
+
+  .search-options {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .user-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
