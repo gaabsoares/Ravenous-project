@@ -1,23 +1,14 @@
 import React from 'react';
-import { businessExample } from '../../App';
 import './BusinessList.css';
 
 import Business from '../Business/Business';
-import { businessList } from '../../App';
 
-function BusinessList(props) {
+function BusinessList({ businesses }) {
     return (
         <div className="business-list">
-            {businessList.map(business => <Business 
-            imageSrc={business.imageSrc} 
-            name={business.name} 
-            address={business.address} 
-            city={business.city} 
-            state={business.state} 
-            zipCode={business.zipCode} 
-            category={business.category} 
-            rating={business.rating} 
-            reviewCount={business.reviewCount} />)}
+            {businesses.map((business, index) => {
+                return <Business business={business} key={index} />;
+            })}
         </div>
     );
 };
