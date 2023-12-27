@@ -1,8 +1,6 @@
 import React from 'react';
 import './Business.css';
 
-import { businessExample } from '../App';
-
 function Business(props) {
     return(
         <div className="business-container">

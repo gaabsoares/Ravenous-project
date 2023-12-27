@@ -1,9 +1,9 @@
 import React from 'react';
-import { businessExample } from '../App';
+import { businessExample } from '../../App';
 import './BusinessList.css';
 
-import Business from './Business';
-import { businessList } from '../App';
+import Business from '../Business/Business';
+import { businessList } from '../../App';
 
 function BusinessList(props) {
     return (

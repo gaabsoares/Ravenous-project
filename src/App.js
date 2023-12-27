@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import BusinessList from './components/BusinessList';
-import SearchBar  from './components/SearchBar';
+import BusinessList from './components/BusinessList/BusinessList';
+import SearchBar  from './components/SearchBar/SearchBar';
 
 export const businessExample = {
     imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
@@ -19,10 +19,15 @@ export const businessExample = {
 export let businessList = [businessExample, businessExample, businessExample, businessExample, businessExample, businessExample];
 
 function App() {
+
+  const searchYelp = (term, loc, sort) => {
+    alert(`Searching Yelp with ${term}, ${loc}, ${sort}`)
+  };
+
   return (
     <div className="App">
         <h1 className="header">ravenous</h1>
-        <SearchBar />
+        <SearchBar searchYelp={searchYelp} />
         <BusinessList />
         <footer></footer>
     </div>
